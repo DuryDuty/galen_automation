@@ -1,0 +1,33 @@
+#Declare objects/ web-elements with css and xpath locators
+@objects
+  # general objects
+  carousel_container    id      rtm_list1
+  category1             id      personalized_events1
+  category2             id      personalized_events2
+
+= Page: Home page =
+  @on Desktop_Large
+
+      carousel_container:
+          height 346px
+          width 1312px
+
+      category1:
+          above category2
+
+      category2:
+          below category1
+
+  @on Desktop_Small
+
+      carousel_container:
+          height 330 to 450 px
+          width 917px
+
+      category1:
+          above category2
+
+      category2:
+          height 337px
+          width 917px
+          below category1

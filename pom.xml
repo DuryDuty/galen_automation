@@ -7,7 +7,24 @@
   <groupId>com.automation.imademethink_galen_automation</groupId>
   <artifactId>imademethink_galen_automation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>imademethink_galen_automation</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>6</source>
+                    <target>6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+        <testResources>
+            <testResource>
+                <directory>src/test/java</directory>
+            </testResource>
+        </testResources>
+    </build>
+    <name>imademethink_galen_automation</name>
 
 <dependencies>
     
